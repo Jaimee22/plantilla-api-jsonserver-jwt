@@ -2,11 +2,64 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plantilla API Json Server con JWT</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <header>
+        <h1>Plantilla API Json Server con JWT</h1>
+    </header>
+    <main>
+        <section class="seccion">
+            <h2>Auth</h2>
+            <div class="descripcion d-post">
+                <div class="etiqueta post">POST</div>
+                <div class="ruta">/auth/register</div>
+            </div>
+            <div class="descripcion d-post">
+                <div class="etiqueta post">POST</div>
+                <div class="ruta">/auth/login</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>Productos</h2>
+            <div class="descripcion d-get">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/productos</div>
+            </div>
+            <div class="descripcion d-get id">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/productos/{ id }</div>
+            </div>
+            <div class="descripcion d-get id">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/products?price= { 15 }</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>Clientes</h2>
+            <div class="descripcion d-get">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/customers</div>
+            </div>
+            <div class="descripcion d-get id">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/customers/{ id }</div>
+            </div>
+        </section>
+        <section class="seccion">
+            <h2>Ventas</h2>
+            <div class="descripcion d-get">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/sales</div>
+            </div>
+            <div class="descripcion d-get id">
+                <div class="etiqueta get">GET</div>
+                <div class="ruta">/sales/{ id }</div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
